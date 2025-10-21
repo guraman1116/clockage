@@ -1,0 +1,369 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "125A6CABD7916AA8"
+	group: "7C154E32A95B8D31"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	icon: "minecraft:bookshelf"
+	id: "125A6CABD7916AA8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:stone_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "09E77E3564B701D4"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3367E8C9351E73F4"
+				stage: "mrpg.jobs.labor"
+				title: "労働者"
+				type: "gamestage"
+			}]
+			title: "労働者"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2922064CF0DBE26A"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5383E90D1DBA5170"
+				stage: "mrpg.jobs.fighter"
+				title: "戦士"
+				type: "gamestage"
+			}]
+			title: "戦士"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["351BD385536BD07E"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			id: "47EF02C974E2FE9F"
+			rewards: [
+				{
+					auto: "disabled"
+					exclude_from_claim_all: true
+					id: "4B7CC9EEF66C3772"
+					table_id: 4320194518774091993L
+					team_reward: false
+					type: "choice"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 351BD385536BD07E"
+					elevate_perms: true
+					id: "27092A3CF17A88C0"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "7E0B70B9EF2FC505"
+				item: { Count: 5, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2922064CF0DBE26A"]
+			id: "0F6FA375CA7CD915"
+			rewards: [{
+				auto: "invisible"
+				id: "33BD298DF42AB488"
+				researchPoint: 100
+				type: "ep1clockage:change_rp"
+			}]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "233538CE6D6B4742"
+				type: "kill"
+				value: 10L
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			icon: "firstaid:plaster"
+			id: "6D67B78A6D850933"
+			tasks: [{
+				icon: "firstaid:plaster"
+				id: "0E19DDA12D686718"
+				stage: "mrpg.jobs.doctor"
+				title: "医者"
+				type: "gamestage"
+			}]
+			title: "医者"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			icon: "create:wrench"
+			id: "34E728F34108D961"
+			tasks: [{
+				icon: "create:wrench"
+				id: "1AE1F068CE50AEE7"
+				stage: "mrpg.jobs.engineer"
+				title: "エンジニアになる"
+				type: "gamestage"
+			}]
+			title: "技術者"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "tconstruct:large_plate"
+				tag: {
+					Material: "tconstruct:wood"
+				}
+			}
+			id: "577F644D53C37502"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:large_plate"
+					tag: {
+						Material: "tconstruct:wood"
+					}
+				}
+				id: "722318B2F3D1D792"
+				stage: "mrpg.jobs.toolmaker"
+				title: "職人"
+				type: "gamestage"
+			}]
+			title: "職人"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:bricks"
+			id: "26F9438F9B3B48FD"
+			tasks: [{
+				icon: "minecraft:bricks"
+				id: "0A1FEF460628A9BA"
+				stage: "mrpg.jobs.builder"
+				title: "建築士"
+				type: "gamestage"
+			}]
+			title: "建築士"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			icon: "lightmanscurrency:coin_gold"
+			id: "270576DA90412F4F"
+			tasks: [{
+				icon: "lightmanscurrency:coin_gold"
+				id: "2F9EF73F19859E48"
+				stage: "mrpg.jobs.merchant"
+				type: "gamestage"
+			}]
+			title: "商人 "
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: false
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "351BD385536BD07E"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					id: "23E4124FD54FB11D"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.toolmaker"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "211E467343F5AA04"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.engineer"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "69C861D6AC03F223"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.doctor"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "5ED09F1D0F025583"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.merchant"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "1967BBD8B105E260"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.labor"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "1F33C4886CF1769B"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.fighter"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "223FB69F43136C7F"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.jobs.builder"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 577F644D53C37502"
+					elevate_perms: true
+					id: "0A946BE2D56F9361"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 34E728F34108D961"
+					elevate_perms: true
+					id: "4008FF388C39817C"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 6D67B78A6D850933"
+					id: "5497DA4369554744"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 270576DA90412F4F"
+					elevate_perms: true
+					id: "788E609E406CAACC"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 09E77E3564B701D4"
+					elevate_perms: true
+					id: "3C6E54E27E92BA4C"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 2922064CF0DBE26A"
+					elevate_perms: true
+					id: "6767E19C5C330090"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @p reset 26F9438F9B3B48FD"
+					elevate_perms: true
+					id: "713D38031B895C67"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "40A2312EC0EF7B41"
+					ignore_reward_blocking: true
+					stage: "mrpg.jobs.pioneer"
+					title: "開拓者"
+					type: "gamestage"
+				}
+			]
+			tasks: [
+				{
+					id: "57DDB62B6E95583D"
+					title: "決定"
+					type: "checkmark"
+				}
+				{
+					id: "3E76767003ABFCAB"
+					title: "注意:現在の職業は失われます"
+					type: "checkmark"
+				}
+			]
+			title: "開拓者"
+			x: 2.0d
+			y: -4.0d
+		}
+	]
+	title: "職業選択"
+}

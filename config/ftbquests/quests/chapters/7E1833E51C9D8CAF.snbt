@@ -1,0 +1,240 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "7E1833E51C9D8CAF"
+	group: "1F3CCA38692F5F1F"
+	icon: "tconstruct:crafting_station"
+	id: "7E1833E51C9D8CAF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "create:andesite_alloy"
+			id: "059E4B694B09F173"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "1A164BE6498FF04C"
+					ignore_reward_blocking: true
+					remove: true
+					stage: "mrpg.ind.1.0"
+					type: "gamestage"
+				}
+				{
+					auto: "no_toast"
+					icon: "create:andesite_alloy"
+					id: "6B501ECAC0AFF7E0"
+					team_reward: false
+					title: "安山岩合金"
+					type: "custom"
+				}
+				{
+					auto: "invisible"
+					id: "4EBB138D5C7EFB7A"
+					researchPoint: -10
+					type: "ep1clockage:change_rp"
+				}
+			]
+			tasks: [
+				{
+					disable_toast: true
+					id: "1889C1A621814152"
+					type: "ep1clockage:has_rp"
+					value: 10
+				}
+				{
+					id: "426A3DD1AAFA6DF2"
+					title: "研究を確定"
+					type: "checkmark"
+				}
+			]
+			title: "安山岩合金"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["059E4B694B09F173"]
+			icon: "create:shaft"
+			id: "0674EB9867897FB9"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0AC356261642B865"
+					ignore_reward_blocking: true
+					stage: "mrpg.ind.2.1"
+					team_reward: false
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "create:shaft"
+					id: "346E16762CD4EE37"
+					title: "シャフト"
+					type: "custom"
+				}
+				{
+					auto: "invisible"
+					id: "4EDDFD4AA1827FF6"
+					researchPoint: -10
+					type: "ep1clockage:change_rp"
+				}
+			]
+			tasks: [
+				{
+					disable_toast: true
+					id: "09CBD9E55CD5FFB0"
+					type: "ep1clockage:has_rp"
+					value: 10
+				}
+				{
+					id: "7F11B57D9B8ADCEC"
+					title: "研究を確定"
+					type: "checkmark"
+				}
+			]
+			title: "シャフト"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0674EB9867897FB9"]
+			icon: "create:cogwheel"
+			id: "2B80F5CF2DE4D6E5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "76247F6806A9AB66"
+					ignore_reward_blocking: true
+					stage: "mrpg.ind.2.2"
+					type: "gamestage"
+				}
+				{
+					icon: "create:cogwheel"
+					id: "25E767147B9C1750"
+					title: "歯車"
+					type: "custom"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "1A2F6C97346864C8"
+				item: { Count: 5, id: "kubejs:research_item" }
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "歯車 - 木製"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2B80F5CF2DE4D6E5"]
+			icon: "tfmg:aluminum_cogwheel"
+			id: "6B059A9C3E653CA1"
+			rewards: [
+				{
+					icon: "tfmg:aluminum_cogwheel"
+					id: "03C693C3BAAB36FA"
+					title: "アルミの歯車"
+					type: "custom"
+				}
+				{
+					auto: "invisible"
+					id: "471011EFECACEE3F"
+					ignore_reward_blocking: true
+					stage: "mrpg.ind.2.3"
+					type: "gamestage"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "71E9053EB86A0E2E"
+				item: { Count: 5, id: "kubejs:research_item" }
+				type: "item"
+			}]
+			title: "歯車 - アルミ"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B80F5CF2DE4D6E5"]
+			icon: "tfmg:steel_cogwheel"
+			id: "301F5898E7E4469B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "79E736FBCBF5A511"
+					ignore_reward_blocking: true
+					stage: "mrpg.ind.2.4"
+					type: "gamestage"
+				}
+				{
+					icon: "tfmg:steel_cogwheel"
+					id: "3D08F4F5E5088E2D"
+					title: "鋼鉄の歯車"
+					type: "custom"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "18F57197ED95D4DA"
+				item: { Count: 5, id: "kubejs:research_item" }
+				type: "item"
+			}]
+			title: "歯車 - 鋼鉄"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B80F5CF2DE4D6E5"]
+			icon: "copycats:copycat_cogwheel"
+			id: "77E3F81E1AE83BF9"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "7FF03816B72E256B"
+					ignore_reward_blocking: true
+					stage: "mrpg.ind.2.5"
+					type: "gamestage"
+				}
+				{
+					icon: "copycats:copycat_cogwheel"
+					id: "43A5893BF600C63F"
+					title: "コピー歯車"
+					type: "custom"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "12E601E552F464E1"
+				item: { Count: 10, id: "kubejs:research_item" }
+				type: "item"
+			}]
+			title: "歯車 - コピー"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			id: "765B39CB8D657C10"
+			rewards: [{
+				ftb_money: 100.0d
+				id: "7424911038A37F93"
+				money_id: "sdm_coin"
+				type: "sdmshop:money"
+			}]
+			tasks: [{
+				id: "43218A75F320287E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "工業"
+}

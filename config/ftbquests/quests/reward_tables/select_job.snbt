@@ -1,0 +1,82 @@
+{
+	id: "3BF46A06841E90D9"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "create:wrench"
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.engineer"
+			title: "エンジニア"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: "firstaid:plaster"
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.doctor"
+			title: "医者"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: "lightmanscurrency:coin_gold"
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.merchant"
+			title: "商人"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: {
+				Count: 1
+				id: "tconstruct:large_plate"
+				tag: {
+					Material: "tconstruct:wood"
+				}
+			}
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.toolmaker"
+			title: "職人"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: {
+				Count: 1
+				id: "minecraft:stone_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.labor"
+			title: "労働者"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.fighter"
+			title: "戦士"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: "minecraft:bricks"
+			ignore_reward_blocking: true
+			stage: "mrpg.jobs.builder"
+			title: "建築士"
+			type: "gamestage"
+		}
+	]
+	title: "select_job"
+}
